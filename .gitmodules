@@ -1,0 +1,3 @@
+[submodule "linux"]
+	path = linux
+	url = https://gitlab.com/ubports/porting/reference-device-ports/halium13/volla-tablet/android_kernel_volla_mt8781
