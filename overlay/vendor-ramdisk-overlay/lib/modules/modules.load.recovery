@@ -172,7 +172,6 @@ nt36xxx_spi.ko
 himax_mmi.ko
 gslx680_tp.ko
 focaltech.ko
-focaltechspi.ko
 jadard_touch.ko
 mtk-socinfo.ko
 mtk_rpmsg_mbox.ko
