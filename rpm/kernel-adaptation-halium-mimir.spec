@@ -32,6 +32,8 @@
 # Build Image
 %define build_Image 1
 
+%define ramdisk ramdisk-mimir.img
+
 
 %define build_vendor_boot 1
 %define build_dtboimage 1
