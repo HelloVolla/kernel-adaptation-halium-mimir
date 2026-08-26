@@ -62,6 +62,6 @@
 %define deviceinfo_kernel_disable_modules false
 
 Version:        5.10.198
-Release:        1
+Release:        2
 
 %include kernel-adaptation-simplified/kernel-adaptation-simplified.inc
