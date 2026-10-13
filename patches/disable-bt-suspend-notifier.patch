@@ -1,0 +1,13 @@
+diff --git a/drivers/bluetooth/hci_vhci.c b/drivers/bluetooth/hci_vhci.c
+index 8469f9876dd2..2315dde0b0dc 100644
+--- a/drivers/bluetooth/hci_vhci.c
++++ b/drivers/bluetooth/hci_vhci.c
+@@ -113,6 +113,8 @@ static int __vhci_create_device(struct vhci_data *data, __u8 opcode)
+ 	hdev->flush = vhci_flush;
+ 	hdev->send  = vhci_send_frame;
+ 
++	set_bit(HCI_QUIRK_NO_SUSPEND_NOTIFIER, &hdev->quirks);
++
+ 	/* bit 6 is for external configuration */
+ 	if (opcode & 0x40)
+ 		set_bit(HCI_QUIRK_EXTERNAL_CONFIG, &hdev->quirks);
